@@ -2,11 +2,11 @@ class LocationsController < ApplicationController
 
   def index
     @locations = Location.all;
-    render :json => @locations, except: [:created_at, :updated_at], :status => :ok;
+    render json: @locations, :status => :ok;
   end
 
   def show
     @location = Location.find(params[:id]);
-    render :json => @location, except: [:created_at, :updated_at], :status => :ok;
+    render json: @location, :status => :ok;
   end
 end
