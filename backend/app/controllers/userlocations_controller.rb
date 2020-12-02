@@ -1,0 +1,2 @@
+class UserlocationsController < ApplicationController
+end
