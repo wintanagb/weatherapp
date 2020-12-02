@@ -1,0 +1,9 @@
+class CreateUserLocations < ActiveRecord::Migration[6.0]
+  def change
+    create_table :user_locations do |t|
+      t.references :user, null: false, foreign_key: true
+      t.references :location, null: false, foreign_key: true
+
+    end
+  end
+end

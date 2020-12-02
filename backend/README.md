@@ -1,24 +1,31 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Weather App
 
-Things you may want to cover:
 
-* Ruby version
+## Process:
+- Model
+- Migration
+  - Test it
+- Route
+- Controller
+  - Test it
 
-* System dependencies
 
-* Configuration
+## Models:
+  - Location
+  - User
+  - UserLocation
 
-* Database creation
+## Tables:
+  - Locations
+    - string: city
+    - string: long, lat
+  - Users
+    - string: username
+    - string: password
+  - UserLocations
+    - references :location
+    - references :user
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Objective:
+ A user can register/log in and view their current city's temperature stats for the week. There will a drop down menu to select from the top 10 cities in the US and be able to view their temperatures upon selection. A user can add cities to their Weather List where upon selection of each city will present them with that current city's weather stats. The main page will then display widgets for the cities the user selected to add to their weather list.

@@ -4,7 +4,6 @@ class CreateUserlocations < ActiveRecord::Migration[6.0]
       t.references:location
       t.references:user
 
-      t.timestamps
     end
   end
 end
