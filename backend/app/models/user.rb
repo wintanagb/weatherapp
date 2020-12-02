@@ -1,4 +1,4 @@
 class User < ApplicationRecord
-    has_many :userlocations
-    has_many :locations, through: :userlocations
+    has_many :user_locations
+    has_many :locations, through: :user_locations
 end
