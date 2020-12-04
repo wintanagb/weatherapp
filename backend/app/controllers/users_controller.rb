@@ -11,9 +11,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(username: params[:username])
-    user_validation(false)
+    @user = User.new(params[:user])
+    user_validation(false);
 
+    session[:user_id] = @user.id
     #Log in user
   end
 

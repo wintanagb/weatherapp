@@ -14,6 +14,6 @@ Location.create(city: "San Diego", coordinates: "32.8153,117.1350");
 Location.create(city: "Dallas", coordinates: "32.7933,96.7665");
 Location.create(city: "San Jose", coordinates: "37.2967,121.8189");
 
-u1 = User.create(username: "Elijah");
+u1 = User.create(username: "Elijah", password: "abc123");
 
-UserLocation.create(user_id: u1.id, location_id: l1.id)
+UserLocation.create(name: "The cities I care about", user_id: u1.id, location_id: l1.id)
