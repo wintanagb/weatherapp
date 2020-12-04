@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv = "X-UA-Compatible" content="it=edge">
-    <title>WeatherApp</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
-    <script src="index.js"></script> 
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv = "X-UA-Compatible" content="it=edge">
+      <title>WeatherApp</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
+      <script src="src/index.js"></script>
+      <script src="src/dropdown.js"></script>
+  </head>
 
-<body>
-    <!--Logo&Header-->
-    <h1 class = "title">Weather.Be</h1>
+  <body>
 
-    <!--City display and Weather Emoji-->
-    <div class = "location">
-        <h1 class = "subtitle is-6">City</h1>
-        <p>Weather Emoji</p>
-    </div>
+      <div class="pl-6 has-background-light pb-6" style="margin-right: 1000px">
+        <!--Logo&Header-->
+        <h1 class = "title">Weather.Be</h1>
 
-     <!--Temperature & Description-->
-    <div class ="temperature">
-        <div class="degree-section"></div>
-        <h2 class="subtitle is-4">34</h2>
-        <div class="temperature-description">Hot as hell</div>
-    </div>
+        <!--City display and Weather Emoji-->
+        <div class = "location">
+            <h1 class = "subtitle is-6">City</h1>
+            <p>Weather Emoji</p>
+        </div>
 
-    
-    <!--Weather List & Dropdown options-->
-<div class = "container">
-    <div class = "Add City">
-        <h1 class = "subtitle is-5" >Select City</h1>
+         <!--Temperature & Description-->
+        <div class ="temperature">
+            <div class="degree-section"></div>
+            <h2 class="subtitle is-4">34</h2>
+            <div class="temperature-description">Hot as hell</div>
+        </div>
 
-    </div>
-</div>
 
-<div class = "footer">     
-    <footer class="page-footer">            
-    <div class="container">                
-        <small                    
-        >Made with <span>❤</span> by                        
-        Wintana Gabreberhan, Elijah Brooks, and Justine Manaloto</a                    
-        >                
-    </small>          
-    </div>        
-</footer>
-</div>   
+        <!--Weather List & Dropdown options-->
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span>Select City</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <!-- <a class="dropdown-item"></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
 
-  
-  
-</body>
+      <div class="footer p-2" >
+        <footer class="page-footer">
+          <small>Made with <span>❤</span> by Wintana Gabreberhan, Elijah Brooks, and Justine Manaloto </small>
+        </footer>
+      </div>
+
+  </body>
 </html>
