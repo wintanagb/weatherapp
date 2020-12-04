@@ -13,8 +13,6 @@ class UsersController < ApplicationController
   def create
     @user = User.new(username: params[:username])
     user_validation(false)
-
-    #Log in user
   end
 
   def update
