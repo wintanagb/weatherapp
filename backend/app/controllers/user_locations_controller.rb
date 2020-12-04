@@ -7,6 +7,8 @@ class UserLocationsController < ApplicationController
   def destroy
     @location_list = UserLocation.find(params[:id]);
     @location_list.destroy();
+
+    render json: "Successfully removed."
   end
 
   private
