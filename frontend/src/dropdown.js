@@ -15,7 +15,6 @@ const fetchCities = () => {
   fetch(URL+'/locations')
   .then(respon => respon.json())
   .then(cities => testFunction(cities))
-
 }
 
 
@@ -33,7 +32,15 @@ const populateDropDown = (city) => {
   dropDown.appendChild(option);
 
   option.addEventListener("click", () => {
-    console.log(city.city, city.coordinates)
+    addToLocationList(city)
+    // Add To Playlist
+    // Create a button
+    // Add eventlistener on button
+      //Display Weather contents
   })
 
+}
+
+const addToLocationList = (location) => {
+  
 }
