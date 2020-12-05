@@ -15,7 +15,6 @@ const fetchCities = () => {
   fetch(URL+'/locations')
   .then(respon => respon.json())
   .then(cities => testFunction(cities))
-
 }
 
 
