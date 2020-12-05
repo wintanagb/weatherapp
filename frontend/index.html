@@ -4,38 +4,44 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv = "X-UA-Compatible" content="it=edge">
-      <title>WeatherApp</title>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>WeatherBe</title>
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
+      <link rel="stylesheet" href="style.css">
       <script src="src/index.js"></script>
       <script src="src/dropdown.js"></script>
+    
+
   </head>
-
+  
   <body>
-
-      <div class="pl-6 has-background-light pb-6" style="margin-right: 1000px">
-        <!--Logo&Header-->
-        <h1 class = "title">Weather.Be</h1>
+      
+         <!--Logo & Header -->
+         <div class = "header">
+            <h1>WeatherBe</h1>
+        </div>
 
         <!--City display and Weather Emoji-->
         <div class = "location">
-            <h1 class = "subtitle is-6">City</h1>
+            <h2 class = "city">City</h2>
             <p>Weather Emoji</p>
         </div>
 
          <!--Temperature & Description-->
         <div class ="temperature">
             <div class="degree-section"></div>
-            <h2 class="subtitle is-4">34</h2>
-            <div class="temperature-description">Hot as hell</div>
+            <h3 class="temp">34</h3>
+            <h4 class="temperature-description">Hot as hell</h4>
         </div>
 
-
         <!--Weather List & Dropdown options-->
-        <div class="dropdown">
+        <div class = "cities-forecast">
+        <h6>Selected City Forecast</h6>
+            <div class = "flex-container-one">
+         <div class="dropdown">
           <div class="dropdown-trigger">
             <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-              <span>Select City</span>
+              <span>Add City</span>
               <span class="icon is-small">
                 <i class="fas fa-angle-down" aria-hidden="true"></i>
               </span>
@@ -47,13 +53,50 @@
             </div>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
 
-      <div class="footer p-2" >
+
+           
+         <!--Extended Forecast-->
+         
+         
+        <div class="extended-forecast">
+            <h5>Your extended forecast</h5>  
+            </div class = "5-day-display">
+
+             
+                <span class = "flex-container-two">
+                    <!-- <ul class = "day-1"></ul>
+                    <img src= "" alt="">
+                    <ul class = "temp-day-1" ></ul> -->
+                </span> 
+
+                <span class = "flex-container-three">
+                </span> 
+
+                <span class = "flex-container-four">
+                </span>        
+
+                <span class = " flex-container-five">
+                </span>                   
+                
+                <span class = "flex-container-six">
+                </span> 
+            </div>
+
+        </div>
+     
+
+     
+         <!-- footer -->
+      <div>
         <footer class="page-footer">
-          <small>Made with <span>❤</span> by Wintana Gabreberhan, Elijah Brooks, and Justine Manaloto </small>
+          <small>Made with <span style = "color:red">❤</span> by Wintana Gabre-berhan, Elijah Brooks, and Justine Manaloto </small>
         </footer>
       </div>
 
+    
+    </div>
   </body>
 </html>
