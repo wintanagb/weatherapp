@@ -12,14 +12,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(username: params[:username])
-    user_validation(false)
-
-    #Log in user
-  end
-
-  def update
-    @user = User.find(params[:id]);
-    user_validation(true)
+    user_validation
   end
 
   def destroy
@@ -30,14 +23,10 @@ class UsersController < ApplicationController
 
   private
 
-  def user_validation(shouldUpdate)
+  def user_validation()
     if @user.valid?
-      if shouldUpdate
-        @user.update(username: params[:username])
-      else
-        @user.save
-      end
-      render json: @user
+      @user = User.find_or_create_by(username: @user.username)
+      render json: @user.as_json(include: :locations)
     else
       render json: {errors: @user.errors.messages}
     end
