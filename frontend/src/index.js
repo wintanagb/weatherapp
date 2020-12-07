@@ -35,4 +35,3 @@ if (navigator.geolocation) {
 });
 
     const listContainer= document.querySelector('.flex-container-one')
-    const 

@@ -12,7 +12,6 @@ body{
     color:white;
     font: bold 25px/25px American Typewriter, serif;
     text-align: center;
-    z-index: 6;
     padding-bottom: 300px;
     font: bold 60px/60px American Typewriter, serif;
     }
@@ -93,7 +92,7 @@ h6 {
     }
 
 .flex-container-one {
-        background-image: linear-gradient(rgb(82, 82, 82), white);
+        background-image: linear-gradient(rgb(184, 247, 255), white);
         position: fixed;
         column-count: 7;
         left: 10px;
@@ -200,17 +199,17 @@ h6 {
         position: absolute;
         z-index: 0;
 }
-    .priority {
+    /* .priority {
         z-index: 100;
         position: absolute;
         padding-left: 475px;
-        padding-top: 300px;
+        padding-top: 300px; */
 }
 
 #dropdown-button {
-    width: 250px;
+    width: 50px;
 }
 
 #city-button {
-  width: 250px;
+  width: 350px;
 }
