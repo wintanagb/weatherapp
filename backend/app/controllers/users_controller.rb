@@ -12,16 +12,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(username: params[:username])
-<<<<<<< HEAD
-    user_validation(false)
-  end
-
-  def update
-    @user = User.find(params[:id]);
-    user_validation(true)
-=======
     user_validation
->>>>>>> wintana
   end
 
   def destroy
