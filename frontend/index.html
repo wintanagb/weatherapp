@@ -7,7 +7,7 @@
       <title>WeatherBe</title>
       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style(2).css">
       <script src="src/dropdown.js"></script>
       <script src="src/login-button.js"></script>
       <script src="src/index.js"></script>
@@ -19,22 +19,34 @@
 
          <!--Logo & Header -->
          <div class = "header">
-            <h1>WeatherBe</h1>
+          <img class = "logo" src="dynamic_backgrounds/logo.gif" alt="logo">
             <h2 id="login-button" class="button is-dark">Login</h2>
         </div>
 
         <!--City display and Weather Emoji-->
+          <!-- <img class = "image" src="dynamic_backgrounds/lightening.gif" alt="lighening"> -->
+      <!-- <div class ="temperature priority is-centered">
         <div class = "location">
-            <h2 class = "city">City</h2>
-            <p><img class="weather-icon" src="https://i.pinimg.com/originals/ac/50/19/ac501913ebf72f75898e7d5c32e09c17.gif"></p>
-        </div>
-
+          <h2 class="city is-centered">City</h2>
+          <p><img class="weather-icon is-centered" src=""></p>
+        </div> -->
          <!--Temperature & Description-->
-        <div class ="temperature">
-            <div class="degree-section"></div>
-            <h3 class="temp">34</h3>
-            <h4 class="temperature-description">Hot as hell</h4>
+        <!-- <div class="degree-section"></div>
+        <h3 class="temp is-centered">34</h3>
+        <h4 class="temperature-description is-size-3 is-centered"></h4>
+      </div> -->
+
+      <div class="location">
+        <h1 class="location-timezone">Timezone</h1>
+        <p>Icon</p>
+      </div>
+      <div class="temperature">
+        <div class="degree-section">
+          <h2 class="temperature-degree">34</h2>
+          <span>Degree Symbol</span>
         </div>
+        <div class="temperature-description">Its Friggin Cold</div>
+      </div>
 
         <!--Weather List & Dropdown options-->
         <div class = "cities-forecast">
@@ -56,9 +68,6 @@
             </div>
 
             <!-- <button class="button is-dark city-button"> Houston </button> -->
-
-
-
 
           </div>
         </div>
