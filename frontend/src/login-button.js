@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 })
 
 const toggleModal = () => {
-  console.log("I'm here")
   const loginButton = document.querySelector("#login-button");
   loginButton.addEventListener("click", () => {
     renderModal();
