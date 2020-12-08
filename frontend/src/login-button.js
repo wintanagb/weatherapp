@@ -1,7 +1,6 @@
 let username;
 let user;
 
-
 document.addEventListener("DOMContentLoaded", ()=>{
   toggleModal()
 })
