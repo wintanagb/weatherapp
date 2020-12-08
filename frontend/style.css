@@ -77,7 +77,7 @@ h6 {
     padding-left: 30px;
 }
 .flex-container-one {
-    background-color: rgb(204, 200, 200);
+    background-image: linear-gradient(rgb(221, 174, 70), rgb(221, 174, 70), rgb(0, 41, 92));
     position: fixed;
     left: 10px;
     border-radius: 25px;
