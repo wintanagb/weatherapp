@@ -15,11 +15,6 @@ class UsersController < ApplicationController
     user_validation
   end
 
-  def update
-    @user = User.find(params[:id]);
-    user_validation
-  end
-
   def destroy
     @user = User.find(params[:id])
     UserLocation.destroy_by(user_id: @user.id)
@@ -27,6 +22,7 @@ class UsersController < ApplicationController
   end
 
   private
+
 
   def user_validation
     if @user.valid?
