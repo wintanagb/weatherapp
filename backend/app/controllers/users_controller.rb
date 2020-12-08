@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id]);
-    render json: @user.as_json(include: :locations)
+    render json: @user.as_json(include: {locations: {}, user_locations:{}})
   end
 
   def create
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
   def user_validation
     if @user.valid?
       @user = User.find_or_create_by(username: @user.username)
-      render json: @user.as_json(include: :locations)
+      render json: @user.as_json(include: {locations: {}, user_locations:{}})
     else
       render json: {errors: @user.errors.messages}
     end

@@ -30,5 +30,7 @@ Location.create(city: "Seattle", state: "WA");
 Location.create(city: "Raleigh", state: "NC");
 
 u1 = User.create(username: "Elijah");
+u2 = User.create(username: "Justine");
+u3 = User.create(username: "Wintana");
 
 UserLocation.create(user_id: u1.id, location_id: l1.id)
