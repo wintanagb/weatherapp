@@ -7,7 +7,7 @@
       <title>WeatherBe</title>
       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
-      <link rel="stylesheet" href="style(2).css">
+      <link rel="stylesheet" href="style.css">
       <script src="src/dropdown.js"></script>
       <script src="src/login-button.js"></script>
       <script src="src/index.js"></script>
@@ -19,9 +19,9 @@
 
          <!--Logo & Header -->
          <div class = "header">
-           <h1>Current City Weather</h1>
+           <h1 >Current City Weather</h1>
           <img class = "logo" src="dynamic_backgrounds/logo.gif" alt="logo">
-            <h2 id="login-button" class="button is-dark">Login</h2>
+            <h2 id="login-button" class="button ">Login</h2>
         </div>
 
         <!--City display and Weather Emoji-->
@@ -39,7 +39,7 @@
 
       <div class="location">
         <h1 class="city"></h1>
-        <p><img class="weather-icon" src =""></p>
+        <p><img class="weather-icon" style = "background-image: radial-gradient(white, white, rgb(231,184,80))" src =""></p>
       </div>
       <div class="temperature">
         <div class="degree-section">
@@ -50,15 +50,16 @@
 
 
         <!--Weather List & Dropdown options-->
-        <div class = "cities-forecast">
-          <h6>Selected City Forecast</h6>
-          <div class = "flex-container-one">
+        <div class = "cities-forecast"> 
+          <!-- <h6>Selected City Forecast</h6> -->
+          <div class = "flex-container-one is-justify-content-space-evenly">
+      
             <!-- FLEX BEGINS -->
-            <div class="dropdown">
+            <div class="dropdown ">
               <div class="dropdown-trigger">
-                <button id="dropdown-button"class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                  <span>Add City</span>
-                  <span class="icon is-small">
+                <button id="dropdown-button"class="button has-backgroung" aria-haspopup="true" aria-controls="dropdown-menu">
+                  <span style = "font: bold 20px/40px American Typewriter, serif">Add City</span>
+                  <span class="icon">
                     <i class="fas fa-angle-down" aria-hidden="true"></i>
                   </span>
                 </button>
@@ -67,11 +68,15 @@
                 <div class="dropdown-content"></div>
               </div>
             </div>
+          </div>
 
             <!-- <button class="button is-dark city-button"> Houston <button class="button is-dark">❌</button></button> -->
 
-          </div>
-        </div>
+  
+
+
+        
+       
 
 
 

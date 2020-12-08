@@ -33,4 +33,4 @@ u1 = User.create(username: "Elijah");
 u2 = User.create(username: "Justine");
 u3 = User.create(username: "Wintana");
 
-UserLocation.create(user_id: u1.id, location_id: l1.id)
+UserLocation.create(name: "The cities I care about", user_id: u1.id, location_id: l1.id)
