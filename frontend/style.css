@@ -51,12 +51,12 @@ body {
     display: flex;
     align-items: center;
 
-    
+
 }
 .degree-section span {
     margin: 10px;
     /* font-size: 60px; */
-    
+
 }
 .degree-section h2 {
     /* font-size: 40px; */
@@ -94,12 +94,12 @@ footer {
     height: auto;
     position: fixed;
     bottom: 0;
-    font: bold 17px/17px American Typewriter; 
+    font: bold 17px/17px American Typewriter, serif;
     right: 20px;
 }
  .button {
     cursor: pointer;
- } 
+ }
 
 .icon {
     padding-right: 6em;
@@ -112,6 +112,3 @@ footer {
     align-items: center;
 
 }
-
-
-
