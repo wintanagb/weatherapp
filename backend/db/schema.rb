@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_12_02_195510) do
 
   create_table "locations", force: :cascade do |t|
     t.string "city"
-    t.string "coordinates"
+    t.string "state"
   end
 
   create_table "user_locations", force: :cascade do |t|

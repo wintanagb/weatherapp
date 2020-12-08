@@ -7,7 +7,7 @@
       <title>WeatherBe</title>
       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" />
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="style(2).css">
       <script src="src/dropdown.js"></script>
       <script src="src/login-button.js"></script>
       <script src="src/index.js"></script>
@@ -19,22 +19,35 @@
 
          <!--Logo & Header -->
          <div class = "header">
-            <h1>WeatherBe</h1>
+           <h1>Current City Weather</h1>
+          <img class = "logo" src="dynamic_backgrounds/logo.gif" alt="logo">
             <h2 id="login-button" class="button is-dark">Login</h2>
         </div>
 
         <!--City display and Weather Emoji-->
+          <!-- <img class = "image" src="dynamic_backgrounds/lightening.gif" alt="lighening"> -->
+      <!-- <div class ="temperature priority is-centered">
         <div class = "location">
-            <h2 class = "city">City</h2>
-            <p>Weather Emoji</p>
-        </div>
-
+          <h2 class="city is-centered">City</h2>
+          <p><img class="weather-icon is-centered" src=""></p>
+        </div> -->
          <!--Temperature & Description-->
-        <div class ="temperature">
-            <div class="degree-section"></div>
-            <h3 class="temp">34</h3>
-            <h4 class="temperature-description">Hot as hell</h4>
+        <!-- <div class="degree-section"></div>
+        <h3 class="temp is-centered">34</h3>
+        <h4 class="temperature-description is-size-3 is-centered"></h4>
+      </div> -->
+
+      <div class="location">
+        <h1 class="city"></h1>
+        <p><img class="weather-icon" src =""></p>
+      </div>
+      <div class="temperature">
+        <div class="degree-section">
+          <h2 class="temp"></h2>
         </div>
+        <div class="temperature-description"></div>
+      </div>
+
 
         <!--Weather List & Dropdown options-->
         <div class = "cities-forecast">
@@ -55,17 +68,14 @@
               </div>
             </div>
 
-            <!-- <button class="button is-dark" id="city-button"> Houston </button> -->
-
-
-
+            <!-- <button class="button is-dark city-button"> Houston <button class="button is-dark">❌</button></button> -->
 
           </div>
         </div>
 
 
 
-         <!--Extended Forecast-->
+         <!-- Extended Forecast
 
 
         <div class="extended-forecast">
@@ -74,9 +84,9 @@
 
 
                 <span class = "flex-container-two">
-                    <!-- <ul class = "day-1"></ul>
+                    <ul class = "day-1"></ul>
                     <img src= "" alt="">
-                    <ul class = "temp-day-1" ></ul> -->
+                    <ul class = "temp-day-1" ></ul>
                 </span>
 
                 <span class = "flex-container-three">
@@ -92,15 +102,19 @@
                 </span>
             </div>
 
-        </div>
+        </div> -->
         <!-- modal -->
 
         <div class="modal" id="login-modal">
           <div class="modal-background"></div>
           <div class="modal-content has-background-white py-5 px-5">
             <h3 class="title mb-6">Enter Username</h3>
-            <input id="username-field" placeholder="Enter Username...">
-            <button class="button is-dark" id="submit-button">Submit</button>
+            <form class="form" action="index.html" method="post">
+              <input id="username-field" class="modal-content" placeholder="Enter Username...">
+              <input class="" id= "submit-button" type="submit" value="Log In">
+            </form>
+            <!-- <input id="username-field" class="modal-content" placeholder="Enter Username..."> -->
+            <!-- <div class="button is-dark" id="submit-button">Submit</div> -->
           </div>
         </div>
 
