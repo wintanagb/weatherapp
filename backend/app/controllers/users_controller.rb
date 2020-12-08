@@ -12,16 +12,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(username: params[:username])
-<<<<<<< HEAD
-    user_validation(false)
+    user_validation
   end
 
   def update
     @user = User.find(params[:id]);
-    user_validation(true)
-=======
     user_validation
->>>>>>> wintana
   end
 
   def destroy
@@ -32,7 +28,7 @@ class UsersController < ApplicationController
 
   private
 
-  def user_validation()
+  def user_validation
     if @user.valid?
       @user = User.find_or_create_by(username: @user.username)
       render json: @user.as_json(include: :locations)
