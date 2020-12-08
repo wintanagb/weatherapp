@@ -46,7 +46,7 @@ const addToLocationList = (location) => {
 const createCityButton = (location) => {
     const container = document.querySelector(".flex-container-one");
     const cityButton = document.createElement("button");
-    cityButton.className = "button is-dark city-button";
+    cityButton.className = "button is-dark is-fullwidth city-button";
     cityButton.textContent = location.city;
 
     cityButton.addEventListener("click", () => {
