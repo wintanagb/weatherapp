@@ -11,20 +11,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(params[:user])
-    user_validation(false);
-
-    session[:user_id] = @user.id
-    #Log in user
-  end
-
-  def update
-    @user = User.find(params[:id]);
-    user_validation(true)
-  end
-
-  def update
-    @user = User.find(params[:id]);
+    @user = User.new(username: params[:username])
     user_validation
   end
 
@@ -35,6 +22,7 @@ class UsersController < ApplicationController
   end
 
   private
+
 
   def user_validation
     if @user.valid?
