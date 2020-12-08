@@ -29,6 +29,6 @@ Location.create(city: "San Jose", state: "CA");
 Location.create(city: "Seattle", state: "WA");
 Location.create(city: "Raleigh", state: "NC");
 
-u1 = User.create(username: "Elijah");
+u1 = User.create(username: "Elijah", password: "abc123");
 
-UserLocation.create(user_id: u1.id, location_id: l1.id)
+UserLocation.create(name: "The cities I care about", user_id: u1.id, location_id: l1.id)

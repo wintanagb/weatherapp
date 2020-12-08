@@ -11,8 +11,16 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(username: params[:username])
-    user_validation
+    @user = User.new(params[:user])
+    user_validation(false);
+
+    session[:user_id] = @user.id
+    #Log in user
+  end
+
+  def update
+    @user = User.find(params[:id]);
+    user_validation(true)
   end
 
   def destroy
