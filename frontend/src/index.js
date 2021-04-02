@@ -7,7 +7,7 @@ let locationObject;
 let loginObject;
 let weatherObject;
 
-const URL = "http://localhost:3000"
+const URL = "http://localhost:3001"
 
 document.addEventListener("DOMContentLoaded", () => {
   userObject = new User();
