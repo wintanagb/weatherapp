@@ -4,5 +4,5 @@ class User < ApplicationRecord
     has_many :locations, through: :user_locations
 
     validates :username, presence: true
-    # validates :username, uniqueness: true
+    validates :username, uniqueness: true
 end
